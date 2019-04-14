@@ -1,13 +1,23 @@
 @import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script);
 
+/* This is a comment!*/
+/* CSS Syntax:
+
+selector {
+  property: value;
+  property: value;
+}
+
+*/
+/* Type selector */
 /*////////// GLOBAL //////////*/
 
 h3 {
   margin: 0 0 10px;
 }
 
-p { 
+p { /* select all <p> */
   font-size: 1em; /* 16px, ?pt, 100%, 1em */
   line-height: 1.5em;
 }
@@ -17,11 +27,16 @@ figure {
 }
 
 figcaption {
+   /*font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman", serif;*/
   font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
   color: #777;
   text-align: right;
 }
 
+/* Class selector(applied to as many elements as you like) */
 .milk-text {
   font: bold 2.6em 'Elsie Swash Caps', cursive;
   color: white;
@@ -121,8 +136,9 @@ img, video, audio, iframe, table, form {
 /*////////// LOGO //////////*/
 
 
-
-#logo h1 {
+/* ID selector(apply to one unique element per page) */
+/* Descendant Selector*/
+#logo h1 {/* select <h1> if inside the id="logo"*/
   font-family: 'Clicker Script', cursive;
 }
 
@@ -139,14 +155,14 @@ section {
 }
 
 /*////////// DETAILS //////////*/
-
+/* Pseudo Selector*/
 
 
 #details div {
   height: 221px;
 }
 
-#details a:link, #details a:visited {
+#details a:link, #details a:visited {/*combining descendant and pseudo selectors */
   color: black;
   text-decoration: none;
 }
